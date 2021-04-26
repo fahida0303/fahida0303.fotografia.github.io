@@ -1,0 +1,227 @@
+.menu {
+    width: 100%;
+    /*Flex*/
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+
+    .nav-menu{
+        margin: 18px;
+        padding: 4px;
+        display: flex;
+        li {
+            a {
+                font-family: 'Montserrat', sans-serif;
+                color: whitesmoke;
+                padding:1rem;
+                font-size: 19px;
+                text-decoration: none;
+
+                &:hover {
+                    color: #5ce1e6;
+                }
+            }
+        }
+    }
+    .nav-toggle{
+        background-color: transparent;
+        border: none;
+        display: none;
+
+    }
+}
+
+#inicio{
+
+    /*hero*/
+    width: 100vw;
+    height: 90vh;
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    /*estilos de texto*/
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    /* estilos de backround*/
+    background-image: url('https://i.imgur.com/4u0u0gW.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*flitro para la img*/
+        filter: opacity(90%);
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+#inicio{
+    h1 {
+        color: whitesmoke;
+        font-family: 'Zen Dots', cursive;
+        font-size: 3.5em;
+        /*position*/
+        position: absolute;
+        margin: 0 0.5rem;
+        bottom: 245px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    p {
+        color: whitesmoke;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3em;
+        font-weight: 100;
+        /*positition*/
+        position: absolute;
+        bottom: 177px;
+    }
+
+}
+
+@mixin menu {
+    #inicio{
+        background-attachment: inherit;
+    }
+    .menu{ 
+        .nav-toggle{
+            display: inline-flex;
+        }
+    .nav-menu{
+            margin-top: 22px;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 82%;
+
+            left: 100%;
+            clip-path: circle(0px at top right);
+            transition: clip-path ease-in-out 700ms;
+            li {
+                width: 90%;
+                background-color: #02394a;
+                box-shadow: 15px 4px 10px #212529;
+                line-height: 47px;
+    
+                a {
+                    &:hover {
+                        color: #00b4d8;
+                    }
+                }
+            }
+    
+        }
+    
+        .nav-menu_visible {
+            left: 0;
+            clip-path: circle(150% at  top right);
+        }
+    }        
+}
+
+@mixin header--laptop(){
+    @include menu();
+    #inicio{
+        h1{
+            font-size: 2.2em;
+            bottom: 143px;
+        }
+        p{
+            bottom: 77px;
+            font-size: 1em;
+        }
+    }
+}   
+
+
+@mixin header--desktops{
+    
+   #inicio{ 
+        h1{
+            bottom: 141px;
+            font-size: 2.9em;
+            
+        }
+        p{
+            bottom: 84px;
+        }
+    }
+}
+@mixin header--mobile{
+    @include menu();
+    #inicio{
+        background-attachment: inherit;
+            h1 {
+                font-size: 1.4rem;
+                bottom: 154px;
+            }
+            p{
+                font-size: 0.8rem;
+                bottom: 100px;
+                width: 74%;
+            }
+        }
+
+}
+
+@mixin header--largescreens {
+    #inicio{
+        h1{
+            bottom: 170px;
+        }
+        p{
+            bottom: 114px;
+        }
+    }
+}
+
+
+@mixin header--Smallscreens {
+  @include menu();
+  #inicio{
+      h1{
+        bottom: 173px;
+        font-size: 3em;
+      }
+      p{
+        bottom: 115px;
+      }
+  }
+}
+
+
+@mixin header--Extralargescreens {
+    .menu{
+        .nav-menu{
+            li{
+                a{
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+    #inicio{
+        h1{
+            font-size: 4.3rem;
+            bottom: 144px;
+        }
+        p{
+            font-size: 2em;
+            bottom: 66px
+        }
+    }
+}
+
+
+
+     
+
+
+
+
+
+

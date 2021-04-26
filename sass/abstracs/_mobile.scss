@@ -1,0 +1,23 @@
+@mixin breakpoint($point){
+    @if $point == mobile {
+        @media screen and (min-width:200px) and (max-width:600px){@content};
+    }
+    @else if $point ==  laptop{
+        @media screen and (min-width: 601px) and (max-width: 854px){@content};
+    }
+    @else if $point ==  Smallscreens{
+        @media screen and (min-width: 855px) and (max-width: 900px){@content};
+    }
+    @else if $point ==  desktops{
+        @media screen and (min-width: 901px)  and (max-width:1200px){@content};
+    }
+
+    @else if  $point == largescreens{
+        @media  screen and (min-width: 1201px) and (max-width: 1440px){@content};
+    }
+
+    @else if  $point == Extralargescreens{
+        @media  screen and (min-width: 1527px){@content};
+    }
+    
+}

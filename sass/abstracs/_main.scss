@@ -1,0 +1,20 @@
+//abstracs 
+@import '../abstracs/mobile';
+
+//components
+@import '../components/_header.scss';
+@import '../components/_article.scss';
+@import '../components/_article2.scss';
+@import '../components/_footer.scss';
+@import  '../components/mobile-method';
+
+//vendor 
+@import '../vendor/boostrap';
+
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;0,700;1,600&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+

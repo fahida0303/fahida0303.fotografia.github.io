@@ -1,0 +1,41 @@
+body{
+    color: black;
+    background-color: #f5f3f4;
+    //overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h6{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+}
+
+p {
+    
+    max-width: 50%;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+img{
+    width: 50%;
+    max-width: 30%;
+    border-radius: 10%;
+}
+
+@mixin  style--mobile{
+    h1,h2,h3,h4,h5,h6{
+        font-size: 1.3rem;
+    }
+    
+}
+
+@mixin style--Extralargescreens {
+    p{
+        font-size: 23px;
+    }
+    img{
+        max-width: 33%;
+    }
+}
+
+@import 'abstracs/main.scss';

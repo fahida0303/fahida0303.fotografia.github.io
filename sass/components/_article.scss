@@ -1,0 +1,208 @@
+#contenido {
+    margin: 45px;
+    font-size: 17px;
+}
+
+h1 {
+    color: #cfcfcf;
+    font-size: 4em;
+}
+
+.revolucion {
+   
+
+    .primeraCamara {
+        max-width: 32%;
+        padding: 10px;
+        position: absolute;
+        left: 57rem;
+
+    }
+
+}
+
+
+
+
+.hitos {
+    padding: 84px 0 20px;
+
+    .img-hitos1 {
+        padding: 18px;
+        position: relative;
+        left: 44rem;
+        bottom: 14rem;
+    }
+    .img-hitos2{
+        position: relative;
+        bottom: 3rem;
+        left: 14rem;
+
+    }
+}
+
+
+
+.hitos img:hover {
+    padding: 20px;
+    transition: all 2s;
+}
+
+@mixin posicion ($bottom, $left, $padding:0) {
+    bottom: $bottom;
+    left: $left;
+    padding: $padding;
+
+
+}
+
+@mixin article--mobile(){
+    .contenido {
+        margin: 10px;
+    }
+    p {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.9rem;
+    }
+
+    .revolucion {
+        margin: 0;
+
+        .primeraCamara {
+            padding: 0;
+            max-width: 51%;
+            position: initial;
+        }
+    }
+
+    .hitos {
+        margin: 10px;
+        padding: 0;
+
+        img {
+            width: 40%;
+        }
+
+        .img-hitos1 {
+            @include posicion(2px, 25px, 0);
+        }
+
+        .img-hitos2 {
+            @include posicion(1rem, 0rem, 0);
+        }
+    }
+
+}
+
+
+
+
+
+
+@mixin article--laptop() {
+    .contenido {
+        margin: 7px;
+    }
+
+    .revolucion {
+        .primeraCamara {
+            max-width: 37%;
+            left: 24rem;
+        }
+    }
+
+    .hitos {
+
+        img {
+            width: 41%;
+        }
+
+        .img-hitos1 {
+            left: 356px;
+            @include posicion(20rem, 24rem);
+        }
+
+        .img-hitos2 {
+            @include posicion(15rem, 13rem);
+        }
+    }
+}
+
+
+
+
+
+
+@mixin article--Smallscreens() {
+
+    .revolucion {
+        .primeraCamara {
+            left: 31rem;
+        }
+
+    }
+
+    .hitos {
+        .img-hitos1 {
+            @include posicion(17rem, 33rem, 18px);
+        }
+
+        .img-hitos2 {
+            @include posicion(12rem, 15rem, 18px);
+        }
+    }
+}
+
+@mixin article--largescreens(){
+    .revolucion{
+        .primeraCamara{
+            left: 52rem;
+        }
+    }
+    .hitos{
+        .img-hitos1{
+            left: 50rem;
+        }
+        .img-hitos2{
+            left: 22rem;
+        }
+    }
+}
+
+@mixin article--desktops{
+    .revolucion{
+    .primeraCamara{
+        max-width: 30%;
+        left: 41rem;
+    }
+}
+    
+}
+
+@mixin  article--Extralargescreens(){
+    .revolucion {
+        .primeraCamara {
+            left: 69rem;
+        }
+    }
+
+    .hitos {
+        .img-hitos1 {
+            left: 960px;
+            bottom: 264px;
+        }
+
+        .img-hitos2 {
+            bottom: -10px;
+            left: 138px;
+        }
+    }
+}

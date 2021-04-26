@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;0,700;1,600&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  color: black;
+  background-color: #f5f3f4;
+}
+
+h1, h2, h3, h4, h6 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
+}
+
+p {
+  max-width: 50%;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 50%;
+  max-width: 30%;
+  border-radius: 10%;
+}
+
+.menu {
+  width: 100%;
+  /*Flex*/
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.menu .nav-menu {
+  margin: 18px;
+  padding: 4px;
+  display: flex;
+}
+.menu .nav-menu li a {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  padding: 1rem;
+  font-size: 19px;
+  text-decoration: none;
+}
+.menu .nav-menu li a:hover {
+  color: #5ce1e6;
+}
+.menu .nav-toggle {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+#inicio {
+  /*hero*/
+  width: 100vw;
+  height: 90vh;
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  /*estilos de texto*/
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  /* estilos de backround*/
+  background-image: url("https://i.imgur.com/4u0u0gW.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*flitro para la img*/
+  filter: opacity(90%);
+}
+#inicio ul li {
+  list-style: none;
+}
+
+#inicio h1 {
+  color: whitesmoke;
+  font-family: "Zen Dots", cursive;
+  font-size: 3.5em;
+  /*position*/
+  position: absolute;
+  margin: 0 0.5rem;
+  bottom: 245px;
+  padding: 10px 5px 10px 5px;
+}
+#inicio p {
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 100;
+  /*positition*/
+  position: absolute;
+  bottom: 177px;
+}
+
+#contenido {
+  margin: 45px;
+  font-size: 17px;
+}
+
+h1 {
+  color: #cfcfcf;
+  font-size: 4em;
+}
+
+.revolucion .primeraCamara {
+  max-width: 32%;
+  padding: 10px;
+  position: absolute;
+  left: 57rem;
+}
+
+.hitos {
+  padding: 84px 0 20px;
+}
+.hitos .img-hitos1 {
+  padding: 18px;
+  position: relative;
+  left: 44rem;
+  bottom: 14rem;
+}
+.hitos .img-hitos2 {
+  position: relative;
+  bottom: 3rem;
+  left: 14rem;
+}
+
+.hitos img:hover {
+  padding: 20px;
+  transition: all 2s;
+}
+
+#novedades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.band {
+  width: 60%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.band .card article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+.band .card article:hover {
+  color: #00b4d8;
+}
+.band .card article a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.items {
+  padding: 8px;
+  width: 78%;
+}
+.items .card .thumb {
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+.items h3 {
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.items:hover {
+  color: #00b4d8;
+}
+
+#novedades nav {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#novedades nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
+.bg-white {
+  background-color: #bfbdc1 !important;
+  text-align: center;
+  font-weight: 200;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+#contact {
+  padding: 20px;
+  margin: 0;
+  background-color: #adb5bd;
+}
+#contact h2 {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+}
+#contact .copyryght {
+  font-size: 10px;
+  text-align: center;
+  color: black;
+}
+#contact textarea.form-control {
+  min-height: calc(8.5em + .75rem + 2px);
+}
+#contact .mb-5 {
+  margin-bottom: 1rem !important;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  #inicio {
+    background-attachment: inherit;
+  }
+
+  .menu .nav-toggle {
+    display: inline-flex;
+  }
+  .menu .nav-menu {
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 82%;
+    left: 100%;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+  }
+  .menu .nav-menu li {
+    width: 90%;
+    background-color: #02394a;
+    box-shadow: 15px 4px 10px #212529;
+    line-height: 47px;
+  }
+  .menu .nav-menu li a:hover {
+    color: #00b4d8;
+  }
+  .menu .nav-menu_visible {
+    left: 0;
+    clip-path: circle(150% at top right);
+  }
+
+  #inicio {
+    background-attachment: inherit;
+  }
+  #inicio h1 {
+    font-size: 1.4rem;
+    bottom: 154px;
+  }
+  #inicio p {
+    font-size: 0.8rem;
+    bottom: 100px;
+    width: 74%;
+  }
+
+  .contenido {
+    margin: 10px;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.9rem;
+  }
+
+  .revolucion {
+    margin: 0;
+  }
+  .revolucion .primeraCamara {
+    padding: 0;
+    max-width: 51%;
+    position: initial;
+  }
+
+  .hitos {
+    margin: 10px;
+    padding: 0;
+  }
+  .hitos img {
+    width: 40%;
+  }
+  .hitos .img-hitos1 {
+    bottom: 2px;
+    left: 25px;
+    padding: 0;
+  }
+  .hitos .img-hitos2 {
+    bottom: 1rem;
+    left: 0rem;
+    padding: 0;
+  }
+
+  .bg-white {
+    margin: 21px;
+    padding: 3px;
+    font-size: 9px;
+  }
+
+  .items h3 {
+    font-size: 4px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  .copyryght {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 854px) {
+  #inicio {
+    background-attachment: inherit;
+  }
+
+  .menu .nav-toggle {
+    display: inline-flex;
+  }
+  .menu .nav-menu {
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 82%;
+    left: 100%;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+  }
+  .menu .nav-menu li {
+    width: 90%;
+    background-color: #02394a;
+    box-shadow: 15px 4px 10px #212529;
+    line-height: 47px;
+  }
+  .menu .nav-menu li a:hover {
+    color: #00b4d8;
+  }
+  .menu .nav-menu_visible {
+    left: 0;
+    clip-path: circle(150% at top right);
+  }
+
+  #inicio h1 {
+    font-size: 2.2em;
+    bottom: 143px;
+  }
+  #inicio p {
+    bottom: 77px;
+    font-size: 1em;
+  }
+
+  .contenido {
+    margin: 7px;
+  }
+
+  .revolucion .primeraCamara {
+    max-width: 37%;
+    left: 24rem;
+  }
+
+  .hitos img {
+    width: 41%;
+  }
+  .hitos .img-hitos1 {
+    left: 356px;
+    bottom: 20rem;
+    left: 24rem;
+    padding: 0;
+  }
+  .hitos .img-hitos2 {
+    bottom: 15rem;
+    left: 13rem;
+    padding: 0;
+  }
+
+  .items h3 {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 855px) and (max-width: 900px) {
+  #inicio {
+    background-attachment: inherit;
+  }
+
+  .menu .nav-toggle {
+    display: inline-flex;
+  }
+  .menu .nav-menu {
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 82%;
+    left: 100%;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+  }
+  .menu .nav-menu li {
+    width: 90%;
+    background-color: #02394a;
+    box-shadow: 15px 4px 10px #212529;
+    line-height: 47px;
+  }
+  .menu .nav-menu li a:hover {
+    color: #00b4d8;
+  }
+  .menu .nav-menu_visible {
+    left: 0;
+    clip-path: circle(150% at top right);
+  }
+
+  #inicio h1 {
+    bottom: 173px;
+    font-size: 3em;
+  }
+  #inicio p {
+    bottom: 115px;
+  }
+
+  .revolucion .primeraCamara {
+    left: 31rem;
+  }
+
+  .hitos .img-hitos1 {
+    bottom: 17rem;
+    left: 33rem;
+    padding: 18px;
+  }
+  .hitos .img-hitos2 {
+    bottom: 12rem;
+    left: 15rem;
+    padding: 18px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  #inicio h1 {
+    bottom: 141px;
+    font-size: 2.9em;
+  }
+  #inicio p {
+    bottom: 84px;
+  }
+
+  .revolucion .primeraCamara {
+    max-width: 30%;
+    left: 41rem;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .revolucion .primeraCamara {
+    left: 52rem;
+  }
+
+  .hitos .img-hitos1 {
+    left: 50rem;
+  }
+  .hitos .img-hitos2 {
+    left: 22rem;
+  }
+
+  #inicio h1 {
+    bottom: 170px;
+  }
+  #inicio p {
+    bottom: 114px;
+  }
+}
+@media screen and (min-width: 1527px) {
+  .menu .nav-menu li a {
+    font-size: 27px;
+  }
+
+  #inicio h1 {
+    font-size: 4.3rem;
+    bottom: 144px;
+  }
+  #inicio p {
+    font-size: 2em;
+    bottom: 66px;
+  }
+
+  .revolucion .primeraCamara {
+    left: 69rem;
+  }
+
+  .hitos .img-hitos1 {
+    left: 960px;
+    bottom: 264px;
+  }
+  .hitos .img-hitos2 {
+    bottom: -10px;
+    left: 138px;
+  }
+
+  p {
+    font-size: 23px;
+  }
+
+  img {
+    max-width: 33%;
+  }
+}
+.carousel img {
+  width: 40% !important;
+  max-height: 11%;
+  margin: 0 auto;
+}
+
+.carousel-caption p {
+  font-size: 17px;
+  margin: 10px 18rem 10px;
+  font-weight: 200;
+  width: 40%;
+}
+
+.carousel-control-next {
+  right: 28rem;
+  width: 2%;
+}
+
+.carousel-control-prev {
+  left: 28rem;
+  width: 2%;
+}
+
+@media all and (min-width: 320px) {
+  .carousel-caption p {
+    font-size: 9px;
+    margin: 10px 7rem 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

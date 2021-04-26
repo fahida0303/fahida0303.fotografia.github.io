@@ -1,0 +1,41 @@
+@media screen and (min-width:200px)and (max-width:600px){
+    @include header--mobile;
+    @include article--mobile;
+    @include article2--mobile;
+    @include style--mobile;
+    @include footer--mobile;
+}
+
+@media screen and (min-width: 601px) and (max-width:854px){
+    @include header--laptop;
+    @include article--laptop;
+    @include  aside--laptop;
+}
+
+@media screen and (min-width: 855px) and (max-width: 900px){
+    @include header--Smallscreens;
+    @include article--Smallscreens;
+}
+
+@media screen and(min-width:901px) and (max-width: 1200px){
+    @include header--desktops;
+    @include article--desktops;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+    @include article--largescreens;
+    @include header--largescreens;
+
+}
+
+@media screen and (min-width: 1527px){
+    @include header--Extralargescreens;
+    @include article--Extralargescreens;
+    @include style--Extralargescreens;
+
+}
+
+
+
+
+
