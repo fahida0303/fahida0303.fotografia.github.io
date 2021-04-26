@@ -1,2 +1,2 @@
 # fotografia-
-un sitio web de la historia de  cámaras fotográficas 
+un sitio web acerca de la historia de las cámaras fotográficas
